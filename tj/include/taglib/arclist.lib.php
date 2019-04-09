@@ -167,7 +167,7 @@ function lib_arclist( &$ctag, &$refObj )
  */
 function lib_arclistDone(&$refObj, &$ctag, $typeid=0, $row=10, $col=1, $titlelen=30, $infolen=160,
         $imgwidth=120, $imgheight=90, $listtype='all', $orderby='default', $keyword='',
-        $innertext='', $arcid=0, $idlist='', $channelid=0, $limit='', $att='', $order='desc', $subday=0, $noflag='',$tagid='', $pagesize=0, $isweight='N')
+        $innertext='', $arcid=0, $idlist='', $channelid=0, $limit='', $att='', $order='desc', $subday=0, $noflag='',$tagid='', $pagesize=0, $isweight='Y')
 {
     global $dsql,$PubFields,$cfg_keyword_like,$cfg_index_cache,$_arclistEnv,$envs,$cfg_cache_type,$cfg_digg_update;
     $row = AttDef($row,10);
@@ -336,6 +336,7 @@ function lib_arclistDone(&$refObj, &$ctag, $typeid=0, $row=10, $col=1, $titlelen
     else if($orderby == 'goodpost') $ordersql = " order by arc.goodpost $orderWay";
     else if($orderby == 'badpost') $ordersql = " order by arc.badpost $orderWay";
     else if($orderby == 'rand') $ordersql = "  ORDER BY rand()";
+	else if($orderby == 'weight') $ordersql = "  order by arc.weight $orderWay"; 
     else $ordersql = " ORDER BY arc.sortrank $orderWay"; 
 
     //limit条件
