@@ -11,6 +11,9 @@
 	margin: 0;
 	-webkit-tap-highlight-color: transparent
 }
+.lin{
+	text-align: center;
+}
 body, html {
 	text-shadow: none;
 	overflow-x: hidden;
