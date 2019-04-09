@@ -1,0 +1,1 @@
+<li id="item_block_[field:global.autoindex/]" class="item_block wow" style="animation-delay:.[field:global.autoindex/]s"> <a href="[field:redirecturl/]" target="_blank" class="item_img" title="[field:title/]"> <img src="[field:picname/]" /> </a> </li>

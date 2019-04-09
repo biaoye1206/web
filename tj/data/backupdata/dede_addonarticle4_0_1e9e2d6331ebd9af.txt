@@ -1,0 +1,2 @@
+INSERT INTO `dede_addonarticle4` VALUES('1','18','','#','','192.168.0.102','/moblie/images/1501045631427.jpg');
+INSERT INTO `dede_addonarticle4` VALUES('2','18','','#','','192.168.0.102','/moblie/images/1501047604274.jpg');

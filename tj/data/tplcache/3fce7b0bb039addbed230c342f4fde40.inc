@@ -1,0 +1,1 @@
+ <a href="[field:typelink/]" class="active"> <span>[field:typename/]</span> </a> 

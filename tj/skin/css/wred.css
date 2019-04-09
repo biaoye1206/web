@@ -1,0 +1,68 @@
+﻿/* 织梦58（dede58.com）做最好的织梦整站模板下载网站 */
+/*#EF4136*/
+
+#fixed_videoPost .fixed-btn a:hover i {
+	color: #fff;
+}
+/*.agent-pc color*/
+
+.agent-pc #header.mini .nav>li:hover a span, .agent-pc #header.mini .nav>li a.active span, .agent-pc #header.mini .nav>li:hover a i, .agent-pc #header.mini .nav>li a.active i, .agent-pc #indexPage .news .content_list .owl-item:hover .item_info .title, .agent-pc .ad .content_list .item_block:hover .title, .agent-pc .ad .content_list .item_block:hover .detailsde i, .agent-pc .video .item_block:hover .item_info .title, .agent-pc #shares a:hover i, #online_open:hover i, .agent-pc #header .nav>li a.active i, .agent-pc #header .nav>li a.active span, .agent-pc #header .nav>li:hover a i, .agent-pc #header .nav>li:hover a span, .agent-pc .container_target a:hover, .agent-pc .container_target a:last-child, .agent-pc .npagePage.post .postWrap .project .content_list .item_block:hover .item_info .title, .agent-pc #header .nav .subnav li a.active, .agent-pc #header .nav .subnav li a:hover, .agent-pc .team .content_list .item_block:hover .item_info .title {
+	color: #EF4136;
+}
+/*.agent-pc background*/
+.agent-pc #indexPage .service.module .module_container, .agent-pc #indexPage .news .item_block .details, .agent-pc #indexPage .project .content_list .item_block .item_wrapper, .agent-pc #indexPage .project .content_list .owl-item:hover .details i:before, .agent-pc #indexPage .project .content_list .owl-item:hover .details i:after, .agent-pc .ad .more, .agent-pc .team .content_list .item_block .description, .agent-pc .video .owl-theme .owl-nav [class*="owl-"]:hover, .agent-pc #indexPage .imagelink .owl-theme .owl-nav [class*="owl-"]:hover, .agent-pc #olx_qq li a:hover, .agent-pc #indexPage .news .owl-item .line, .agent-pc #indexPage .news .item_block .details, .agent-pc .npagePage .project .content_list .item_block .item_wrapper, .agent-pc .owl-theme .owl-dots .owl-dot.active span, .agent-pc .owl-theme .owl-dots .owl-dot:hover span, .agent-pc .npagePage .news .content_list .item_block:hover, .agent-pc .npagePage .team .content_list .item_block:hover .line, .agent-pc .npagePage.post .news .content_wrapper .tabBtn a .iBtn:hover, .agent-pc .npagePage.post .project .owl-theme:hover .owl-nav [class*=owl-]:hover, .agent-pc #fixed_videoPost .fixed-btn a:hover {
+	background: #EF4136;
+}
+
+
+/*.agent-pc background-透明*/
+.agent-pc .service .content_list .item_block .item_wrapper, .agent-pc #indexPage .service .content_list .item_block .item_wrapper, .agent-pc .video .item_block:hover .item_img .item_mask, {
+background:rgba(239, 65, 54, 0.8);
+}
+/*.agent-pc background-color*/
+.agent-pc #sitecontent .container_category a:hover, .agent-pc #sitecontent .container_category a.active, .agent-pc #contactform p .submit:hover, .agent-pc #indexPage #contactinfo div a:hover, .agent-pc #online_open, .agent-pc .npagePage.post .project .item_tags a.active, .agent-pc .npagePage.post .project .item_tags a:hover, .agent-pc #pages a:hover, .agent-pc #pages a.active, .agent-pc #indexPage .service .more:hover i:after, .agent-pc #indexPage .service .more:hover i:before, .agent-pc #indexPage .project .owl-theme .owl-nav [class*=owl-]:hover, .agent-pc #contactinfo div a:hover, .agent-pc .npagePage #mcontact #contactform .submit:hover, .agent-pc .npagePage.post .news #listContent .item_tags a:hover, .agent-pc #indexPage #topSlider .owl-theme .owl-nav [class*=owl-]:hover, .agent-pc #indexPage .mcustomize .module_container .contentbody .more:hover {
+	background-color: #EF4136;
+}
+/*.agent-pc background-color-透明*/
+.agent-pc .npagePage.post .project .postWrap .content_list .item_wrapper {
+	background-color: transparent;
+}
+/*.agent-pc background-color 深蓝*/
+.agent-pc #indexPage .news .item_block .details::after {
+	background-color: #FF5449;
+}
+/*.agent-pc border-color*/
+.agent-pc #indexPage .news .content_list .owl-item:hover .item_block .o_ico:after, .agent-pc #indexPage .mcustomize .module_container .contentbody .more:hover, .agent-pc .ad .content_list .item_block .item_img:after, .agent-pc #indexPage #contactinfo div a:hover, .agent-pc #online_open, .agent-pc #pages a:hover, .agent-pc #pages a.active, .agent-pc #contactinfo div a:hover, .agent-pc .npagePage #mcontact #contactform .submit:hover, .agent-pc .npagePage.post .news .content_wrapper .tabBtn a:hover .btn_img, .agent-pc .npagePage.post .project .content_list .current:after {
+	border-color: #EF4136;
+}
+.agent-pc .npagePage.post .project #postWrapper .description {
+	border-top-color: #EF4136;
+}
+.agent-pc #indexPage .mcustomize .module_container .contentbody .more:hover::after, .agent-pc #indexPage .mcustomize .module_container .contentbody .more:hover:before {
+	background-color: #fff;
+}
+/*agent-mobile*/
+
+
+/*agent-mobile-color*/
+.agent-mobile .mm-listview>li>a.active, .agent-mobile .project .item_block:hover .title, .agent-mobile .service .item_block:hover .title, .agent-mobile .video .item_block:hover .title, .agent-mobile .indexPage .news .content_list .item_block:hover .date_wrap .year, .agent-mobile .indexPage .news .item_block:hover .item_info .title,  .agent-mobile .module.mcustomize .description a.more:hover, .agent-mobile .ad .content_list .item_block:hover .title, .agent-mobile .contactinfo p a, .agent-mobile #online a, .agent-mobile .dropmenu ul li a.active, .agent-mobile #sitecontent .news #listContent .item_block:hover .title, .agent-mobile .news .item_block:hover .item_info .title, .agent-mobile #sitecontent #listContent .item_block:hover .title {
+	color: #EF4136;
+}
+/*agent-mobile-background*/
+.agent-mobile #category .label, .agent-mobile .indexPage .service.mlist .container_header, .agent-mobile .news .m_container .content .item_block:hover .o_ico, .agent-mobile .mlist.ad .m_container .content .more:hover, .agent-mobile .mlist.news .m_container .content .more:hover, .agent-mobile .mlist.project .m_container .content .more:hover, .agent-mobile .mlist.team .m_container .content .more:hover, .mlist.video .m_container .content .more:hover, .agent-mobile .module.mcustomize .description a.more:hover, .agent-mobile .cate-title, .agent-mobile .mm-menu .mm-listview>li.mm-selected>a:not(.mm-next) {
+	background: #EF4136;
+}
+/*agent-mobile-background-color*/
+.agent-mobile .team .item_block:hover, .agent-mobile .contactinfo div a:hover, .agent-mobile #pages a.active, #pages a:hover, .agent-mobile .npagePage.post #postWrapper .item_tags a:hover {
+	background-color: #EF4136;
+}
+.agent-mobile .npagePage.post .project .postWrap .content_list .item_wrapper, .agent-mobile .npagePage .news .m_container .content .item_block:hover {
+	background-color: transparent;
+}
+/*agent-mobile-border-color*/
+.agent-mobile .mlist.ad .m_container .content .more:hover, .agent-mobile .mlist.news .m_container .content .more:hover, .agent-mobile mlist.project .m_container .content .more:hover, .agent-mobile .mlist.team .m_container .content .more:hover, .agent-mobile .mlist.video .m_container .content .more:hover, .agent-mobile #pages a.active, .agent-mobile #pages a:hover {
+	border-color: #EF4136;
+}
+#indexPage .module.bgShow.mcounter {
+	background-color: #EF4136;
+}

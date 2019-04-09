@@ -1,0 +1,1 @@
+<div class="mcounter module bgShow" style=" background-image:url([field:typebg/]);">

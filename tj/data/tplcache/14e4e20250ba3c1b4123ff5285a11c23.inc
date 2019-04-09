@@ -1,0 +1,1 @@
+ <a href="[field:typelink/]" target="_blank" style="margin-bottom: 10px;">[field:typename/]</a> 

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="agent-mobile theme-w theme-wred">
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="author" content="WebSite" />
+<meta name="viewport" content="user-scalable=no" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/lib.css" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/style.css" />
+<link id="themeCssPath" rel="stylesheet" type="text/css" href="/moblie/css/wred.css" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/3342.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="/moblie/js/jquery-1.8.3.min.js"></script><![endif]-->
+<!--[if (!IE)|(gte IE 11)]><!-->
+<script type="text/javascript" src="/moblie/js/jquery-1.9.1.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/moblie/js/mmen.js" data-main="indexMain"></script>
+<title>{dede:global.cfg_webname/}</title>
+</head>
+<body>
+<div id="sitecontent" style="overflow:hidden;">
+<div id="header" class="Fixed"> <a href="#menu" class="mm-hbtn">
+  <div class="lcbody">
+    <div class="lcitem top">
+      <div class="rect top"></div>
+    </div>
+    <div class="lcitem bottom">
+      <div class="rect bottom"></div>
+    </div>
+  </div>
+  </a> <a class="mm-hlogo" href="/m/"> <img src="/moblie/images/logo.png" /> </a> </div>
+<div class="content indexPage">
+  <div class="mm-head"></div>
+  <div id="mm-slider">
+    <ul class="slider">
+      {dede:arclist  typeid='18' addfields='mobliepic' channelid='4' row='6'}
+      <li> <a target="_blank">
+        <div class="slider-img"> <img src="[field:mobliepic/]" /> </div>
+        <div class="slider-info">
+          <p class="title">[field:title/]</p>
+          <p class="subtitle">[field:description/]</p>
+        </div>
+        </a> </li>
+      {/dede:arclist}
+    </ul>
+  </div>
+  <!--产品-->
+  <div class="mlist project module">
+    <div class="bgmask"></div>
+    <div class="m_container">
+      <div class="container_header wow animated ">{dede:type typeid="1"}
+        <p class="title">[field:typename/]</p>
+        <p class="subtitle">[field:typeeng/]</p>
+        {/dede:type} </div>
+      <div class="content">
+        <div class="wrapper">
+          <div class="content_list clearfix"> {dede:arclist typeid='1' row='6'}
+            <div id="project_item_[field:global.autoindex/]" class="item_block wow" style="animation-delay:.[field:global.autoindex/]s"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
+              <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
+                <div class="item_mask"></div>
+              </div>
+              <div class="item_wrapper">
+                <div class="item_info">
+                  <p class="title ellipsis">[field:title/]</p>
+                  <p class="line"></p>
+                  <p class="subtitle ellipsis">[field:description/]...</p>
+                </div>
+              </div>
+              </a> </div>
+            {/dede:arclist} </div>
+          {dede:type typeid="1"}<a href="list.php?tid=[field:id/]" class="more wow" style="animation-delay:.5s"><i class="fa fa-angle-right" aria-hidden="true"></i></a>{/dede:type} </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--技术-->
+  <div class="mlist project module">
+    <div class="bgmask"></div>
+    <div class="m_container">
+      <div class="container_header wow animated ">{dede:type typeid="21"}
+        <p class="title">[field:typename/]</p>
+        <p class="subtitle">[field:typeeng/]</p>
+        {/dede:type} </div>
+      <div class="content">
+        <div class="wrapper">
+          <div class="content_list clearfix"> {dede:arclist typeid='21' row='6'}
+            <div id="project_item_[field:global.autoindex/]" class="item_block wow" style="animation-delay:.[field:global.autoindex/]s"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
+              <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
+                <div class="item_mask"></div>
+              </div>
+              <div class="item_wrapper">
+                <div class="item_info">
+                  <p class="title ellipsis">[field:title/]</p>
+                  <p class="line"></p>
+                  <p class="subtitle ellipsis">[field:description/]...</p>
+                </div>
+              </div>
+              </a> </div>
+            {/dede:arclist} </div>
+          {dede:type typeid="21"}<a href="list.php?tid=[field:id/]" class="more wow" style="animation-delay:.5s"><i class="fa fa-angle-right" aria-hidden="true"></i></a>{/dede:type} </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--服务-->
+  <div class="mlist service module">
+    <div class="bgmask"></div>
+    <div class="m_container">
+      <div class="container_header wow animated ">{dede:type typeid="4"}
+        <p class="title">[field:typename/]</p>
+        <p class="subtitle">[field:description/]</p>
+        {/dede:type} </div>
+      <div class="content">
+        <div class="wrapper">
+          <div class="content_list clearfix"> {dede:arclist typeid='4' row='6'}
+            <div id="item_block_[field:global.autoindex/]" class="item_block wow"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
+              <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
+                <div class="item_mask"></div>
+              </div>
+              <div class="item_wrapper move">
+                <div class="item_info">
+                  <p class="title ellipsis">[field:title/]</p>
+                  <p class="subtitle ellipsis">[field:shorttitle/]</p>
+                </div>
+              </div>
+              </a> </div>
+            {/dede:arclist} </div>
+          {dede:type typeid="4"}<a href="list.php?tid=[field:id/]" class="more wow" style="animation-delay:.5s">MORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>{/dede:type} </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--视频宣传-->
+  <div class="mlist video module">
+    <div class="bgmask"></div>
+    <div class="m_container">
+      <div class="container_header wow animated "> {dede:type typeid="7"}
+        <p class="title">[field:typename/]</p>
+        <p class="subtitle">[field:typeeng/]</p>
+        {/dede:type} </div>
+      <div class="content">
+        <div class="wrapper">
+          <div class="content_list clearfix"> {dede:arclist  typeid='7'  row='12' addfields='video' channelid='5' row='4'}
+            <div id="project_item_[field:global.autoindex/]" class="item_block" style="animation-delay:.[field:global.autoindex/]s"> <a href="[field:video/]" class="item_link clearfix">
+              <div class="item_img">
+                <p class="img_box"><img src="[field:picname/]" alt="[field:title/]" /></p>
+                <div class="item_mask"></div>
+                <div class="item_ico"></div>
+              </div>
+              <div class="item_wrapper clearfix">
+                <div class="item_info clearfix">
+                  <p class="title ellipsis">[field:title/]</p>
+                  <div class="description">
+                    <p>[field:shorttitle/]</p>
+                  </div>
+                </div>
+              </div>
+              </a> </div>
+            {/dede:arclist} </div>
+          {dede:type typeid="7"}<a href="list.php?tid=[field:id/]" class="more wow" style="animation-delay:.5s"><i class="fa fa-angle-right" aria-hidden="true"></i></a>{/dede:type} </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--公司动态-->
+  <div class="mlist news module">
+    <div class="bgmask"></div>
+    <div class="m_container">
+      <div class="container_header wow animated ">{dede:type typeid="11"}
+        <p class="title">[field:typename/]</p>
+        <p class="subtitle">[field:typeeng/]</p>
+        {/dede:type} </div>
+      <div class="content">
+        <div class="wrapper">
+          <div class="content_list clearfix"> {dede:arclist typeid='11' row='9'}
+            <div id="item_block_[field:global.autoindex/]" class="item_block wow"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
+              <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
+                <div class="item_mask"></div>
+              </div>
+              <div class="item_wrapper clearfix">
+                <p class="date_wrap"> <span class="year">[field:pubdate function="MyDate('Y',@me)"/]</span> <span class="md">[field:pubdate function="MyDate('m-d',@me)"/]</span> </p>
+                <div class="item_info clearfix">
+                  <p class="title ellipsis">[field:title/]</p>
+                  <div class="description">[field:description/]</div>
+                </div>
+              </div>
+              </a>
+              <div class="o_ico"></div>
+              <div class="line"></div>
+              <div class="item_tags clearfix"> </div>
+            </div>
+            {/dede:arclist} </div>
+          {dede:type typeid="10"}<a href="list.php?tid=[field:id/]" class="more wow" style="animation-delay:.5s"><i class="fa fa-angle-right" aria-hidden="true"></i></a>{/dede:type} </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--关于我们-->
+  {dede:type typeid="13"}
+  <div class="mcustomize module bgShow bgParallax" style=" background-image:url([field:typebg/]);">
+    <div class="bgmask"></div>
+    <div class="module_container">
+      <div class="container_content">
+        <div class="contentbody">
+          <div class="wrapper">
+            <div class="header wow">
+              <p class="title">[field:typename/]</p>
+              <p class="subtitle">[field:typeeng/]</p>
+            </div>
+            <div class="description wow">
+              <p>[field:description/]...</p>
+              <p><br />
+              </p>
+              <p><a href="list.php?tid=14" target="_blank" class="more">查看更多</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  {/dede:type}
+  <!--工作方式-->
+  <!--<div class="mlist ad module">
+    <div class="bgmask"></div>
+    <div class="m_container">{dede:type typeid="15"}
+      <div class="container_header wow animated ">
+        <p class="title">[field:typename/]</p>
+        <p class="subtitle">[field:typeeng/]</p>
+        {/dede:type} </div>
+      <div class="content">
+        <div class="wrapper">
+          <ul class="content_list clearfix">
+            {dede:arclist typeid='15' row='3'}
+            <li id="item_block_[field:global.autoindex/]" class='item_block wow [field:global name=autoindex runphp="yes"](@me%2==0)? @me="":@me="first";[/field:global]' style="animation-delay:.[field:global.autoindex/]s"> <a href="view.php?aid=[field:id/]" class="item_link clearfix" target="_blank">
+              <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
+                <div class="item_mask"></div>
+              </div>
+              <div class="item_wrapper">
+                <p class="title ellipsis">[field:title/]</p>
+                <div class="subtitle">[field:description/]...</div>
+                <p class="detailsde"><i class="fa fa-ico01" aria-hidden="true"></i></p>
+              </div>
+              </a> </li>
+            {/dede:arclist}
+          </ul>
+          {dede:type typeid="15"}<a href="list.php?tid=[field:id/]" class="more wow" style="animation-delay:.5s"><i class="fa fa-angle-right" aria-hidden="true"></i></a>{/dede:type} </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>-->
+  <!--计数器-->
+  <!--{dede:type typeid="15"}
+  <div class="mcounter module bgShow" style=" background-image:url([field:typebg/]);">{/dede:type}
+    <div class="bgmask"></div>
+    <div class="module_container">
+      <div class="container_content">
+        <ul class="content_list">
+          {dede:arclist  typeid='20'  row='4'}
+          <li>
+            <div>
+              <p class="number"><span class="counterDX" data-counter-value="[field:shorttitle/]">[field:shorttitle/]</span><span class="unit">[field:description/]</span></p>
+              <p class="title">[field:title/]</p>
+            </div>
+          </li>
+          {/dede:arclist}
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>-->
+  <!--团队成员-->
+  <!--<div class="mlist team module">
+    <div class="bgmask"></div>
+    <div class="m_container">
+      <div class="container_header wow animated ">{dede:type typeid="16"}
+        <p class="title">[field:typename/]</p>
+        <p class="subtitle">[field:typeeng/]</p>
+        {/dede:type} </div>
+      <div class="content">
+        <div class="wrapper">
+          <div class="content_list clearfix"> {dede:arclist  typeid='16'  row='3'}
+            <div id="item_block_[field:global.autoindex/]" class="item_block wow"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
+              <div href="view.php?aid=[field:id/]" class="item_img" target="_blank">
+                <p class="img_box"><img src="[field:picname/]" alt="[field:title/]" /></p>
+              </div>
+              <div class="item_wrapper clearfix">
+                <div class="item_info clearfix">
+                  <p class="title ellipsis">[field:title/]</p>
+                  <div class="description">
+                    <p>[field:description/]...</p>
+                  </div>
+                  <p class="details"><i class="fa fa-ico01" aria-hidden="true"></i></p>
+                </div>
+              </div>
+              </a> </div>
+            {/dede:arclist} </div>
+          {dede:type typeid="16"}<a href="list.php?tid=[field:id/]" class="more wow" style="animation-delay:.5s"><i class="fa fa-angle-right" aria-hidden="true"></i></a>{/dede:type} </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>-->
+  <!--合作伙伴-->
+  <div class="mlist imagelink module">
+    <div class="bgmask"></div>
+    <div class="m_container">
+      <div class="content">
+        <div class="wrapper">
+          <ul class="content_list" style="width:840px">
+            {dede:arclist typeid='19' row='24' addfields='redirecturl' channelid='1'}
+            <li id="item_block_[field:global.autoindex/]" class="item_block wow" style="animation-delay:.[field:global.autoindex/]s"> <a href="[field:redirecturl/]" target="_blank" class="item_img" title="[field:title/]"> <img src="[field:picname/]" /> </a> </li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--联系我们-->
+  <div id="mcontact" class="mlist module">
+    <div class="container_header"> {dede:type typeid="17"}
+      <p class="title">[field:typename/]</p>
+      <p class="subtitle">[field:typeeng/]</p>
+      {/dede:type} </div>
+    <div class="contactlist plr10">
+      <div class="contactinfo">
+        <h3 class="name">{dede:global.cfg_name/}</h3>
+        <p class="add"><span>地址：</span>{dede:global.cfg_add/}</p>
+        <p class="tel"><span>电话：</span><a href="tel:{dede:global.cfg_tel/}">{dede:global.cfg_tel/}</a></p>
+        <p class="mobile"><span>手机：</span><a href="tel:{dede:global.cfg_moblie/}">{dede:global.cfg_moblie/}</a></p>
+        <p class="email"><span>邮箱：</span>{dede:global.cfg_email/}</p>
+        <div> <a class="fl" target="_blank" href="{dede:global.cfg_weibo/}"><i class="fa fa-weibo"></i></a> <a class="fl" target="_blank" href="mqqwpa://im/chat?chat_type=wpa&uin={dede:global.cfg_qq/}&version=1&src_type=web&web_src=qq.com"><i class="fa fa-qq"></i></a> <a id="mpbtn" class="fl" target="_blank" href="{dede:global.cfg_weixin/}"><i class="fa fa-weixin"></i></a> </div>
+      </div>
+    </div>
+  </div>
+  <!--联系--> 
+</div>
+{dede:include filename="footer_m.htm"/}
+</body>
+</html>

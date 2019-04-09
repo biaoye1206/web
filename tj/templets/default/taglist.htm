@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="agent-pc theme-w theme-wred">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/list.php?tid={dede:field.id/}";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}" />
+<meta name="author" content="WebSite" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="renderer" content="webkit" />
+<link rel="stylesheet" type="text/css" href="/skin/css/lib2.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/style.3342.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/wred.css" id="themeCssPath" />
+<link rel="stylesheet" type="text/css" href="/skin/css/3342.css" id="ucssurl" />
+<script type="text/javascript" src="/skin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/skin/js/org.1494058893.js" data-main="baseMain"></script>
+<script type="text/javascript" src="/skin/js/3342.js"></script>
+</head>
+<body id="longPage" class="gh0  longPage  bodylist bodyservice cn">
+<div class="bodyMask"></div>
+<div id="header">
+  <div class="wrapper">
+    <div class="content">
+      <div id="headTop"> <a href="/" id="logo"> <img src="/skin/images/logo.png" height="45"></a> </div>
+      {dede:include filename="head.htm"/}
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<div id="sitecontent" class="ff_sitecontent">
+  <div class="npagePage ff_pageList">
+    <div id="pageTarget" class="ff_pageTarget module">
+      <div class="module_container">
+        <div class="container_target wow">您的位置：
+          {dede:field name='position'/}</div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="mlist service module ff_noSlider" style="">
+        <div class="bgmask"></div>
+        <div class="module_container">
+          <div class="container_category wow movedx" data-movedx-mid="2" data-movedx-distance="15"> <a class='{dede:field name=typeid runphp="yes"}(@me=="4")? @me="active":@me="";{/dede:field}'><span>标签搜索结果：</span></a> </div>
+          <div class="container_content">
+            <div class="content_wrapper">
+              <div class="content_list clearfix"> {dede:list pagesize ='16'}
+                <div id="item_block_[field:global.autoindex/]" class="item_block wow"> <a href="[field:arcurl/]" class="item_link clearfix" target="_blank">
+                  <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
+                    <div class="item_mask"></div>
+                  </div>
+                  <div class="item_wrapper move">
+                    <div class="item_info">
+                      <p class="title ellipsis">[field:title/]</p>
+                      <p class="subtitle ellipsis">[field:shorttitle/]</p>
+                    </div>
+                  </div>
+                  </a> </div>
+                {/dede:list} </div>
+            </div>
+            <style>
+#pages li{display: inline-block;}#pages .thisclass a{background-color: #EF4136;color: #fff;}
+</style>
+            <div id="pages">{dede:pagelist listitem="pre,next,pageno" listsize="1"/}</div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

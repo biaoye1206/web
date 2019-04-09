@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="agent-mobile theme-w theme-wred">
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}" />
+<meta name="author" content="WebSite" />
+<meta name="viewport" content="user-scalable=no" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/lib.css" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/style.css" />
+<link id="themeCssPath" rel="stylesheet" type="text/css" href="/moblie/css/wred.css" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/3342.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="/moblie/js/jquery-1.8.3.min.js"></script><![endif]-->
+<!--[if (!IE)|(gte IE 11)]><!-->
+<style>
+.agent-mobile .news .item_block .item_info .description {
+	height: auto;
+}
+</style>
+<script type="text/javascript" src="/moblie/js/jquery-1.9.1.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/moblie/js/mmen.js" data-main="postMain"></script>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+</head>
+<body>
+<div id="sitecontent" style="overflow:hidden;">
+<div id="header" class="Fixed"> <a href="#menu" class="mm-hbtn">
+  <div class="lcbody">
+    <div class="lcitem top">
+      <div class="rect top"></div>
+    </div>
+    <div class="lcitem bottom">
+      <div class="rect bottom"></div>
+    </div>
+  </div>
+  </a> <a class="mm-hlogo" href="/m/"> <img src="/moblie/images/logo.png" /> </a> </div>
+<div class="npagePage pageEditor" id="page_zxdt2">
+  <div class="content">
+    <div class="mpageEditor module">
+      <div class="module_container">
+        <div class="container_header wow">
+          <p class="title">{dede:field.title/}</p>
+          <p class="subtitle">{dede:field.description/}</p>
+        </div>
+        <div class="container_content">
+          <div class="content_wrapper">
+            <div class="postbody"> {dede:field.body/} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{dede:include filename="footer_m.htm"/}
+</body>
+</html>

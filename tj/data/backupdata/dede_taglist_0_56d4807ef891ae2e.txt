@@ -1,0 +1,4 @@
+INSERT INTO `dede_taglist` VALUES('1','7','0','2','外贸电商');
+INSERT INTO `dede_taglist` VALUES('2','7','0','2','外贸网站');
+INSERT INTO `dede_taglist` VALUES('3','8','0','2','工作室');
+INSERT INTO `dede_taglist` VALUES('4','8','0','2','网站模板');

@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]" class="more wow" style="animation-delay:.5s">MORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>

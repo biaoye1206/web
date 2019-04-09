@@ -1,0 +1,41 @@
+
+<div id="footer">
+  <style>
+#footer a {float: none;}
+</style>
+  <p><span class="ellipsis">{dede:global.cfg_powerby/}</span></p>
+</div>
+<nav id="menu">
+  <ul>
+    <li> <a class="{dede:field name=typeid runphp='yes'}(@me=='')? @me='active':@me='';{/dede:field}" href="/m/" target="_self">首页</a> </li>
+    {dede:channelartlist typeid='top' currentstyle='active'}
+    <li><a class="{dede:field.currentstyle/}" {dede:field name=typeid runphp="yes"}
+global $dsql;
+$sql = "SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+$row = $dsql->GetOne($sql);      
+      @me=is_array($row)?'href="javascript:;"':'';
+      {/dede:field} href="list.php?tid={dede:field.id/}">{dede:field name='typename'/}</a> {dede:php}
+      $id = $refObj->Fields['id'];
+      $sql = ("SELECT * FROM dede_arctype where reid ='$id'");
+      $db->SetQuery($sql);
+      $db->Execute();
+      if($db->GetTotalRow()){
+      echo '
+      <ul class="subnav" >
+        ';
+        while($row = $db->GetArray()){
+        $url = 'list.php?tid='.$row[id];
+        echo "
+        <li><a href=".$url.">".($row[typename])."</a></li>
+        ";
+        };
+        echo '
+      </ul>
+      ';
+      };
+      {/dede:php} </li>
+    {/dede:channelartlist}
+  </ul>
+</nav>
+</div>
+<div id="online"> <a class="home" href="/m/"><i class="fa fa-home" aria-hidden="true"></i> </a> <a class="ol-tel" href="tel:{dede:global.cfg_tel/}"><i class="fa fa-phone" aria-hidden="true"></i> </a> <a class="ol-qq" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.data_qq/}&site=qq&menu=yes"><i class="fa fa-qq" aria-hidden="true"></i> </a> </div>

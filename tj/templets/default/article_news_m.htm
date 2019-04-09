@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="agent-mobile theme-w theme-wred">
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}" />
+<meta name="author" content="WebSite" />
+<meta name="viewport" content="user-scalable=no" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/lib.css" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/style.css" />
+<link id="themeCssPath" rel="stylesheet" type="text/css" href="/moblie/css/wred.css" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/3342.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="/moblie/js/jquery-1.8.3.min.js"></script><![endif]-->
+<!--[if (!IE)|(gte IE 11)]><!-->
+<style>
+.agent-mobile .news .item_block .item_info .description {
+	height: auto;
+}
+</style>
+<script type="text/javascript" src="/moblie/js/jquery-1.9.1.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/moblie/js/mmen.js" data-main="postMain"></script>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+</head>
+<body>
+<div id="sitecontent" style="overflow:hidden;">
+<div id="header" class="Fixed"> <a href="#menu" class="mm-hbtn">
+  <div class="lcbody">
+    <div class="lcitem top">
+      <div class="rect top"></div>
+    </div>
+    <div class="lcitem bottom">
+      <div class="rect bottom"></div>
+    </div>
+  </div>
+  </a> <a class="mm-hlogo" href="/m/"> <img src="/moblie/images/logo.png" /> </a> </div>
+<div class="npagePage post">
+  <div class="content">
+    <div class="mlistpost news module">
+      <div class="module_container">
+        <div class="container_content">
+          <div class="content_wrapper">
+            <div id="postWrapper">
+              <div id="postContent">
+                <div id="postInfo">
+                  <p class="title">{dede:field.title/}</p>
+                  <p class="subtitle">{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}</p>
+                </div>
+                <div class="postbody"> {dede:field.body/} </div>
+              </div>
+              <div id="listContent">
+                <div class="item_tags"> <a href="javascript:;">最新内容</a> </div>
+                <div class="mlist news">
+                  <div class="content_wrapper">
+                    <div class="content_list clearfix"> {dede:arclist typeid='10' row='4'}
+                      <div id="item_block_[field:global.autoindex/]" class="item_block wow"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
+                        <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
+                          <div class="item_mask"></div>
+                        </div>
+                        <div class="item_wrapper clearfix">
+                          <p class="date_wrap"> <span class="year">[field:pubdate function="MyDate('Y',@me)"/]</span> <span class="md">[field:pubdate function="MyDate('m-d',@me)"/]</span> </p>
+                          <div class="item_info clearfix">
+                            <p class="title ellipsis">[field:title/]</p>
+                            <div class="description">[field:description/]...</div>
+                          </div>
+                        </div>
+                        </a>
+                        <div class="o_ico"></div>
+                        <div class="line"></div>
+                      </div>
+                      {/dede:arclist} </div>
+                    <a href="" class="more wow" style="animation-delay:.5s"><i class="fa fa-angle-right" aria-hidden="true"></i></a> </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{dede:include filename="footer_m.htm"/}
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/*agent-pc*/
+.agent-pc #contactform p .inputtxt {
+	width: 360px;
+}
+.agent-pc #contactform p .submit {
+	width: 400px;
+}
+.agent-pc #indexPage .imagelink .owl-theme .owl-nav [class*=owl-] {
+	border-radius: 0;
+}
+.agent-pc #indexPage .imagelink.module .module_container .owl-theme .owl-nav [class*=owl-] {
+	width: 28px;
+}
+.agent-pc .npagePage #mcontact #contactlist #contactform {
+	margin-bottom: 140px;
+}
+.agent-pc #online_open:active i, .agent-pc .agent-pc #online_open:hover i {
+	color: #fff;
+}
+.agent-pc #pages a.next i, .agent-pc #pages a.prev i {
+	font-size: 16px;
+	line-height: 36px;
+}
+.agent-pc #pages a {
+	vertical-align: middle;
+}
+.agent-pc .npagePage.post img {
+	height: auto;
+}
+/*agent-mobile*/
+
+.agent-mobile .indexPage .service.mlist .container_header, .agent-mobile .project .item_block, .agent-mobile .service .item_block, .agent-mobile .video .item_block, .agent-mobile .news .m_container .content .item_block, .agent-mobile .project .item_block, .agent-mobile .mcustomize .description.wow, .agent-mobile .ad .content_list li, .agent-mobile .team .item_block, .agent-mobile .module.mcounter ul.content_list li, .agent-mobile .video .item_block {
+	animation-name: fadeInUp;
+}

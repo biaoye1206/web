@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="agent-mobile theme-w theme-wred">
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}" />
+<meta name="author" content="WebSite" />
+<meta name="viewport" content="user-scalable=no" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/lib.css" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/style.css" />
+<link id="themeCssPath" rel="stylesheet" type="text/css" href="/moblie/css/wred.css" />
+<link rel="stylesheet" type="text/css" href="/moblie/css/3342.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="/moblie/js/jquery-1.8.3.min.js"></script><![endif]-->
+<!--[if (!IE)|(gte IE 11)]><!-->
+<script type="text/javascript" src="/moblie/js/jquery-1.9.1.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/moblie/js/mmen.js" data-main="baseMain"></script>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+</head>
+<body>
+<div id="sitecontent" style="overflow:hidden;">
+<div id="header" class="Fixed"> <a href="#menu" class="mm-hbtn">
+  <div class="lcbody">
+    <div class="lcitem top">
+      <div class="rect top"></div>
+    </div>
+    <div class="lcitem bottom">
+      <div class="rect bottom"></div>
+    </div>
+  </div>
+  </a> <a class="mm-hlogo" href="/m/"> <img src="/moblie/images/logo.png" /> </a> </div>
+<div class="perch-box">
+  <p></p>
+</div>
+<div class="npagePage">
+  <div class="content">
+    <div class="mlist service module">
+      <div class="bgmask"></div>
+      <div class="m_container">
+        <div class="content">
+          <div class="wrapper">
+            <div class="content_list clearfix"> {dede:list pagesize ='8'}
+              <div id="item_block_[field:global.autoindex/]" class="item_block wow"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
+                <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
+                  <div class="item_mask"></div>
+                </div>
+                <div class="item_wrapper move">
+                  <div class="item_info">
+                    <p class="title ellipsis">[field:title/]</p>
+                    <p class="subtitle ellipsis">[field:shorttitle/]</p>
+                  </div>
+                </div>
+                </a> </div>
+              {/dede:list} </div>
+          </div>
+          <style>
+#pages li{display: inline-block;}#pages .thisclass a{background-color: #EF4136;color: #fff;}
+</style>
+          <div id="pages">{dede:pagelist listitem="pre,next,pageno" listsize="1"/}</div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+{dede:include filename="footer_m.htm"/}
+<div class="list_nav">
+  <div id="category" class="dropmenu pro-dropmenu">
+    <div class="label">
+      <div class="text"> 全部 </div>
+      <i class="down fa fa-angle-down transform"></i> </div>
+    <div class="cate-box">
+      <div class="cate-title">
+        <div class="text"> 全部 </div>
+        <p class="pclose"></p>
+      </div>
+      <ul class="transform">
+        <li><a href="{dede:type typeid='4'}list.php?tid=[field:id/]{/dede:type}" class='{dede:field name=typeid runphp="yes"}(@me=="4")? @me="active":@me="";{/dede:field}'>全部</a></li>
+        {dede:channel currentstyle="
+        <li><a href='~typelink~' class='active'>~typename~</a></li>
+        "}
+        <li><a href="list.php?tid=[field:id/]">[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

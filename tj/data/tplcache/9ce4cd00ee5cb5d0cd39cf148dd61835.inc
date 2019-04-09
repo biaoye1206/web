@@ -1,0 +1,1 @@
+<a href="list.php?tid=[field:id/]" class="more wow" style="animation-delay:.5s"><i class="fa fa-angle-right" aria-hidden="true"></i></a>

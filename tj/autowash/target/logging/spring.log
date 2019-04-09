@@ -1,0 +1,104 @@
+2019-04-09 05:04:18.101 DEBUG 22383 --- [https-jsse-nio-8008-exec-10] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6276150627615062
+2019-04-09 05:04:19.314 DEBUG 22383 --- [https-jsse-nio-8008-exec-6] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.625
+2019-04-09 05:04:19.337 DEBUG 22383 --- [https-jsse-nio-8008-exec-6] c.t.a.d.s.S.getServicePointsByScope      : ==>  Preparing: SELECT id, longitude, latitude FROM svr_service_station WHERE longitude BETWEEN ? AND ? AND latitude BETWEEN ? AND ? 
+2019-04-09 05:04:19.337 DEBUG 22383 --- [https-jsse-nio-8008-exec-6] c.t.a.d.s.S.getServicePointsByScope      : ==> Parameters: 113.26450000000001(Double), 113.26450000000001(Double), 23.1288(Double), 23.1288(Double)
+2019-04-09 05:04:19.340 DEBUG 22383 --- [https-jsse-nio-8008-exec-6] c.t.a.d.s.S.getServicePointsByScope      : <==      Total: 0
+2019-04-09 10:06:20.973 DEBUG 22383 --- [Thread-45] com.tianj.autowash.dao.device.DeviceDao  : Cache Hit Ratio [com.tianj.autowash.dao.device.DeviceDao]: 0.7111111111111111
+2019-04-09 10:06:20.973  INFO 22383 --- [Thread-45] c.t.a.service.device.SocketServiceImpl   : 1002 设备进入
+2019-04-09 10:42:49.254  WARN 22383 --- [Thread-45] c.t.a.service.device.SocketServiceImpl   : 客户发送数据解析异常:Unexpected character ('�' (code 65533 / 0xfffd)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (String)"�"; line: 1, column: 2]
+2019-04-09 11:02:50.740 DEBUG 22383 --- [https-jsse-nio-8008-exec-4] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6265560165975104
+2019-04-09 11:02:51.063 DEBUG 22383 --- [https-jsse-nio-8008-exec-6] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6239669421487604
+2019-04-09 11:02:51.098 DEBUG 22383 --- [https-jsse-nio-8008-exec-6] c.t.a.d.s.S.getServicePointsByScope      : ==>  Preparing: SELECT id, longitude, latitude FROM svr_service_station WHERE longitude BETWEEN ? AND ? AND latitude BETWEEN ? AND ? 
+2019-04-09 11:02:51.098 DEBUG 22383 --- [https-jsse-nio-8008-exec-6] c.t.a.d.s.S.getServicePointsByScope      : ==> Parameters: 113.05443572474175(Double), 113.19657135533635(Double), 22.870555251914773(Double), 23.067803054969964(Double)
+2019-04-09 11:02:51.104 DEBUG 22383 --- [https-jsse-nio-8008-exec-6] c.t.a.d.s.S.getServicePointsByScope      : <==      Total: 3
+2019-04-09 11:03:10.184 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6255144032921811
+2019-04-09 11:03:29.694  WARN 22383 --- [https-jsse-nio-8008-exec-3] c.tianj.autowash.config.EhCacheListener  : -------------------------------- notifyElementExpired userCache value: [ key = fa643d43106340339f4d72fc608c0852, value=com.tianj.autowash.entity.user.User@56f7992f, version=1, hitCount=0, CreationTime = 1554641079401, LastAccessTime = 1554641079401 ]
+2019-04-09 11:03:29.694 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.u.UserDao.findUserBySessionId    : ==>  Preparing: SELECT `id`, `session_key`, `openid`, `usr_user_info_id`, `session`, `create_date`, `update_date`, `del_flag` FROM usr_user WHERE session =? 
+2019-04-09 11:03:29.694 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.u.UserDao.findUserBySessionId    : ==> Parameters: fa643d43106340339f4d72fc608c0852(String)
+2019-04-09 11:03:29.702 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.dao.user.UserInfoDao.findById      : ====>  Preparing: SELECT `id`, `name`, `phone`, `gender`, `city`, `province`, `car_number`, `nick_name`, `create_date`, `update_date`, `del_flag` FROM usr_user_info WHERE id = ? AND del_flag = ? 
+2019-04-09 11:03:29.702 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.dao.user.UserInfoDao.findById      : ====> Parameters: 84fad5aa4764401baef88f85f6568952(String), 84fad5aa4764401baef88f85f6568952(String)
+2019-04-09 11:03:29.706 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.dao.user.UserInfoDao.findById      : <====      Total: 0
+2019-04-09 11:03:29.706 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.u.UserDao.findUserBySessionId    : <==      Total: 1
+2019-04-09 11:03:29.707 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.o.OrderDao.getOrderListByUserId  : ==>  Preparing: SELECT id,order_amount,order_result,trade_type,create_date FROM sys_order WHERE `usr_user_id` = ? order by create_date DESC 
+2019-04-09 11:03:29.707 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.o.OrderDao.getOrderListByUserId  : ==> Parameters: 57abd294d9b14e3b90839cbc0fe4cfe1(String)
+2019-04-09 11:03:29.798 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.o.OrderDao.getOrderListByUserId  : <==      Total: 43
+2019-04-09 11:03:40.504 DEBUG 22383 --- [https-jsse-nio-8008-exec-2] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6270491803278688
+2019-04-09 11:03:41.633 DEBUG 22383 --- [https-jsse-nio-8008-exec-4] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6285714285714286
+2019-04-09 11:04:10.045 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6300813008130082
+2019-04-09 11:04:11.280 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6275303643724697
+2019-04-09 11:04:11.281 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.s.S.getServicePointsByScope      : ==>  Preparing: SELECT id, longitude, latitude FROM svr_service_station WHERE longitude BETWEEN ? AND ? AND latitude BETWEEN ? AND ? 
+2019-04-09 11:04:11.281 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.s.S.getServicePointsByScope      : ==> Parameters: 113.06111523869912(Double), 113.18986132380086(Double), 22.881395851189495(Double), 23.056832755988246(Double)
+2019-04-09 11:04:11.285 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.s.S.getServicePointsByScope      : <==      Total: 3
+2019-04-09 11:04:38.161 DEBUG 22383 --- [https-jsse-nio-8008-exec-10] c.t.a.dao.user.UserDao.findByOpenid      : ==>  Preparing: SELECT `id`, `session_key`, `openid`, `usr_user_info_id`, `session`, `create_date`, `update_date`, `del_flag` FROM usr_user WHERE `openid` = ? 
+2019-04-09 11:04:38.163 DEBUG 22383 --- [https-jsse-nio-8008-exec-10] c.t.a.dao.user.UserDao.findByOpenid      : ==> Parameters: oFl4Z4-juGk8ib8RlKFApCwpdUYw(String)
+2019-04-09 11:04:38.167 DEBUG 22383 --- [https-jsse-nio-8008-exec-10] c.t.a.dao.user.UserDao.findByOpenid      : <==      Total: 0
+2019-04-09 11:04:38.168 DEBUG 22383 --- [https-jsse-nio-8008-exec-10] c.t.a.dao.user.UserInfoDao.findByPhone   : ==>  Preparing: SELECT `id`, `name`, `phone`, `gender`, `city`, `province`, `car_number`, `nick_name`, `create_date`, `update_date`, `del_flag` FROM usr_user_info WHERE phone = ? 
+2019-04-09 11:04:38.168 DEBUG 22383 --- [https-jsse-nio-8008-exec-10] c.t.a.dao.user.UserInfoDao.findByPhone   : ==> Parameters: 13827708785(String)
+2019-04-09 11:04:38.171 DEBUG 22383 --- [https-jsse-nio-8008-exec-10] c.t.a.dao.user.UserInfoDao.findByPhone   : <==      Total: 0
+2019-04-09 11:04:38.172 DEBUG 22383 --- [https-jsse-nio-8008-exec-10] c.t.a.dao.user.UserInfoDao.insert        : ==>  Preparing: INSERT INTO usr_user_info (`id`, `name`, `phone`, `gender`, `city`, `province`, `nick_name`, `car_number`, `create_date`, `update_date`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019-04-09 11:04:38.174 DEBUG 22383 --- [https-jsse-nio-8008-exec-10] c.t.a.dao.user.UserInfoDao.insert        : ==> Parameters: 8960449193ed4253bb9eccfb6c916493(String), null, 13827708785(String), 2(Integer), 佛山(String), 广东(String), 🌸在水一方(String), null, 2019-04-09 11:04:38.172(Timestamp), 2019-04-09 11:04:38.171(Timestamp)
+2019-04-09 11:28:55.332 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6290322580645161
+2019-04-09 11:28:56.906 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6305220883534136
+2019-04-09 11:29:20.583 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.a.dao.user.UserDao.findByOpenid      : ==>  Preparing: SELECT `id`, `session_key`, `openid`, `usr_user_info_id`, `session`, `create_date`, `update_date`, `del_flag` FROM usr_user WHERE `openid` = ? 
+2019-04-09 11:29:20.584 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.a.dao.user.UserDao.findByOpenid      : ==> Parameters: oFl4Z4yEhC3p4AcdqCRTrTOFHwxU(String)
+2019-04-09 11:29:20.591 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.a.dao.user.UserDao.findByOpenid      : <==      Total: 1
+2019-04-09 11:29:20.596 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.autowash.dao.user.UserDao.update     : ==>  Preparing: UPDATE usr_user SET session_key = ?, session = ?, update_date = ? WHERE `id` = ? 
+2019-04-09 11:29:20.598 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.autowash.dao.user.UserDao.update     : ==> Parameters: glT6Kf44hmZFpAt3GdSoZQ==(String), ba432ada39164fbe99caa9be7f56576f(String), 2019-04-09 11:29:20.595(Timestamp), a90efd51f97842fe884f2462dddab736(String)
+2019-04-09 11:29:20.624 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.autowash.dao.user.UserDao.update     : <==    Updates: 1
+2019-04-09 11:29:20.625 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.a.dao.user.UserInfoDao.update        : ==>  Preparing: UPDATE usr_user_info SET phone = ?, gender = ?, city = ?, province = ?, nick_name = ?, update_date = ? WHERE id = ? 
+2019-04-09 11:29:20.625 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.a.dao.user.UserInfoDao.update        : ==> Parameters: 18929571638(String), 1(Integer), (String), 堪培拉(String), XINJQ(String), 2019-04-09 11:29:20.624(Timestamp), ff9509ae642246d780fe12672b09696d(String)
+2019-04-09 11:29:20.634 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.a.dao.user.UserInfoDao.update        : <==    Updates: 1
+2019-04-09 11:31:23.558  WARN 22383 --- [https-jsse-nio-8008-exec-9] c.tianj.autowash.config.EhCacheListener  : -------------------------------- notifyElementExpired userCache value: [ key = ba432ada39164fbe99caa9be7f56576f, value=com.tianj.autowash.entity.user.User@529d4e71, version=1, hitCount=0, CreationTime = 1554780560634, LastAccessTime = 1554780560634 ]
+2019-04-09 11:31:23.563 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] c.t.a.d.u.UserDao.findUserBySessionId    : ==>  Preparing: SELECT `id`, `session_key`, `openid`, `usr_user_info_id`, `session`, `create_date`, `update_date`, `del_flag` FROM usr_user WHERE session =? 
+2019-04-09 11:31:23.565 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] c.t.a.d.u.UserDao.findUserBySessionId    : ==> Parameters: ba432ada39164fbe99caa9be7f56576f(String)
+2019-04-09 11:31:23.569 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] c.t.a.dao.user.UserInfoDao.findById      : ====>  Preparing: SELECT `id`, `name`, `phone`, `gender`, `city`, `province`, `car_number`, `nick_name`, `create_date`, `update_date`, `del_flag` FROM usr_user_info WHERE id = ? AND del_flag = ? 
+2019-04-09 11:31:23.571 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] c.t.a.dao.user.UserInfoDao.findById      : ====> Parameters: ff9509ae642246d780fe12672b09696d(String), ff9509ae642246d780fe12672b09696d(String)
+2019-04-09 11:31:23.575 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] c.t.a.dao.user.UserInfoDao.findById      : <====      Total: 0
+2019-04-09 11:31:23.575 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] c.t.a.d.u.UserDao.findUserBySessionId    : <==      Total: 1
+2019-04-09 11:31:23.577 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] c.t.a.d.o.OrderDao.getOrderListByUserId  : ==>  Preparing: SELECT id,order_amount,order_result,trade_type,create_date FROM sys_order WHERE `usr_user_id` = ? order by create_date DESC 
+2019-04-09 11:31:23.578 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] c.t.a.d.o.OrderDao.getOrderListByUserId  : ==> Parameters: a90efd51f97842fe884f2462dddab736(String)
+2019-04-09 11:31:23.581 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] c.t.a.d.o.OrderDao.getOrderListByUserId  : <==      Total: 0
+2019-04-09 11:33:42.977 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.632
+2019-04-09 11:33:47.220 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6294820717131474
+2019-04-09 11:33:47.224 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.a.d.s.S.getServicePointsByScope      : ==>  Preparing: SELECT id, longitude, latitude FROM svr_service_station WHERE longitude BETWEEN ? AND ? AND latitude BETWEEN ? AND ? 
+2019-04-09 11:33:47.225 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.a.d.s.S.getServicePointsByScope      : ==> Parameters: 113.09439(Double), 113.156187(Double), 22.931738(Double), 23.007127(Double)
+2019-04-09 11:33:47.229 DEBUG 22383 --- [https-jsse-nio-8008-exec-5] c.t.a.d.s.S.getServicePointsByScope      : <==      Total: 3
+2019-04-09 11:33:51.254 DEBUG 22383 --- [https-jsse-nio-8008-exec-4] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6309523809523809
+2019-04-09 11:33:56.469 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6284584980237155
+2019-04-09 11:33:56.472 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.s.S.getServicePointsByScope      : ==>  Preparing: SELECT id, longitude, latitude FROM svr_service_station WHERE longitude BETWEEN ? AND ? AND latitude BETWEEN ? AND ? 
+2019-04-09 11:33:56.473 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.s.S.getServicePointsByScope      : ==> Parameters: 113.082645(Double), 113.167933(Double), 22.917416(Double), 23.02146(Double)
+2019-04-09 11:33:56.476 DEBUG 22383 --- [https-jsse-nio-8008-exec-3] c.t.a.d.s.S.getServicePointsByScope      : <==      Total: 3
+2019-04-09 11:36:15.032 DEBUG 22383 --- [https-jsse-nio-8008-exec-4] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6299212598425197
+2019-04-09 11:36:15.873 DEBUG 22383 --- [https-jsse-nio-8008-exec-7] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6274509803921569
+2019-04-09 11:36:15.877 DEBUG 22383 --- [https-jsse-nio-8008-exec-7] c.t.a.d.s.S.getServicePointsByScope      : ==>  Preparing: SELECT id, longitude, latitude FROM svr_service_station WHERE longitude BETWEEN ? AND ? AND latitude BETWEEN ? AND ? 
+2019-04-09 11:36:15.878 DEBUG 22383 --- [https-jsse-nio-8008-exec-7] c.t.a.d.s.S.getServicePointsByScope      : ==> Parameters: 113.05884930852334(Double), 113.18759539362507(Double), 22.88091870462143(Double), 23.0563562282399(Double)
+2019-04-09 11:36:15.883 DEBUG 22383 --- [https-jsse-nio-8008-exec-7] c.t.a.d.s.S.getServicePointsByScope      : <==      Total: 3
+2019-04-09 11:36:31.954 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.62890625
+2019-04-09 11:39:26.062 DEBUG 22383 --- [https-jsse-nio-8008-exec-6] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6303501945525292
+2019-04-09 11:41:12.736 DEBUG 22383 --- [https-jsse-nio-8008-exec-9] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6317829457364341
+2019-04-09 11:41:42.478 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] c.t.a.dao.user.UserDao.findByOpenid      : ==>  Preparing: SELECT `id`, `session_key`, `openid`, `usr_user_info_id`, `session`, `create_date`, `update_date`, `del_flag` FROM usr_user WHERE `openid` = ? 
+2019-04-09 11:41:42.479 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] c.t.a.dao.user.UserDao.findByOpenid      : ==> Parameters: oFl4Z4-lhJDBOsslksaYhTMRzozU(String)
+2019-04-09 11:41:42.483 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] c.t.a.dao.user.UserDao.findByOpenid      : <==      Total: 1
+2019-04-09 11:41:42.484 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] c.t.autowash.dao.user.UserDao.update     : ==>  Preparing: UPDATE usr_user SET session_key = ?, session = ?, update_date = ? WHERE `id` = ? 
+2019-04-09 11:41:42.485 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] c.t.autowash.dao.user.UserDao.update     : ==> Parameters: 1RN0gFfnF8BN5ZxXf11FaA==(String), 7ee44d3beb0e4f56aaa23ba42870c50d(String), 2019-04-09 11:41:42.483(Timestamp), 57abd294d9b14e3b90839cbc0fe4cfe1(String)
+2019-04-09 11:41:42.494 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] c.t.autowash.dao.user.UserDao.update     : <==    Updates: 1
+2019-04-09 11:41:42.495 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] c.t.a.dao.user.UserInfoDao.update        : ==>  Preparing: UPDATE usr_user_info SET phone = ?, gender = ?, city = ?, province = ?, nick_name = ?, update_date = ? WHERE id = ? 
+2019-04-09 11:41:42.496 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] c.t.a.dao.user.UserInfoDao.update        : ==> Parameters: 15918851466(String), 1(Integer), 广州(String), 广东(String), 彪爺-Lin(String), 2019-04-09 11:41:42.494(Timestamp), 84fad5aa4764401baef88f85f6568952(String)
+2019-04-09 11:41:42.503 DEBUG 22383 --- [https-jsse-nio-8008-exec-1] c.t.a.dao.user.UserInfoDao.update        : <==    Updates: 1
+2019-04-09 11:43:01.043 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] c.t.a.dao.user.UserDao.findByOpenid      : ==>  Preparing: SELECT `id`, `session_key`, `openid`, `usr_user_info_id`, `session`, `create_date`, `update_date`, `del_flag` FROM usr_user WHERE `openid` = ? 
+2019-04-09 11:43:01.044 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] c.t.a.dao.user.UserDao.findByOpenid      : ==> Parameters: oFl4Z4-lhJDBOsslksaYhTMRzozU(String)
+2019-04-09 11:43:01.048 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] c.t.a.dao.user.UserDao.findByOpenid      : <==      Total: 1
+2019-04-09 11:43:01.049 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] c.t.autowash.dao.user.UserDao.update     : ==>  Preparing: UPDATE usr_user SET session_key = ?, session = ?, update_date = ? WHERE `id` = ? 
+2019-04-09 11:43:01.051 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] c.t.autowash.dao.user.UserDao.update     : ==> Parameters: 1RN0gFfnF8BN5ZxXf11FaA==(String), 003554bad2424e0d85aa128f28ca1c6b(String), 2019-04-09 11:43:01.048(Timestamp), 57abd294d9b14e3b90839cbc0fe4cfe1(String)
+2019-04-09 11:43:01.059 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] c.t.autowash.dao.user.UserDao.update     : <==    Updates: 1
+2019-04-09 11:43:01.062 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] c.t.a.dao.user.UserInfoDao.update        : ==>  Preparing: UPDATE usr_user_info SET phone = ?, gender = ?, city = ?, province = ?, nick_name = ?, update_date = ? WHERE id = ? 
+2019-04-09 11:43:01.062 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] c.t.a.dao.user.UserInfoDao.update        : ==> Parameters: 15918851466(String), 1(Integer), 广州(String), 广东(String), 彪爺-Lin(String), 2019-04-09 11:43:01.059(Timestamp), 84fad5aa4764401baef88f85f6568952(String)
+2019-04-09 11:43:01.071 DEBUG 22383 --- [https-jsse-nio-8008-exec-8] c.t.a.dao.user.UserInfoDao.update        : <==    Updates: 1
+2019-04-09 11:43:30.987  INFO 22383 --- [Thread-45] c.t.a.service.device.SocketServiceImpl   : 1002设备断开连接
+2019-04-09 11:43:37.248 DEBUG 22383 --- [Thread-46] com.tianj.autowash.dao.device.DeviceDao  : Cache Hit Ratio [com.tianj.autowash.dao.device.DeviceDao]: 0.717391304347826
+2019-04-09 11:43:37.248  INFO 22383 --- [Thread-46] c.t.a.service.device.SocketServiceImpl   : 1002 设备进入
+2019-04-09 11:47:08.172 DEBUG 22383 --- [https-jsse-nio-8008-exec-2] com.tianj.autowash.dao.server.ServerDao  : Cache Hit Ratio [com.tianj.autowash.dao.server.ServerDao]: 0.6293436293436293
+2019-04-09 11:47:08.178 DEBUG 22383 --- [https-jsse-nio-8008-exec-2] c.t.a.d.s.S.getServicePointsByScope      : ==>  Preparing: SELECT id, longitude, latitude FROM svr_service_station WHERE longitude BETWEEN ? AND ? AND latitude BETWEEN ? AND ? 
+2019-04-09 11:47:08.178 DEBUG 22383 --- [https-jsse-nio-8008-exec-2] c.t.a.d.s.S.getServicePointsByScope      : ==> Parameters: 113.094207(Double), 113.156003(Double), 22.920498(Double), 23.018172(Double)
+2019-04-09 11:47:08.182 DEBUG 22383 --- [https-jsse-nio-8008-exec-2] c.t.a.d.s.S.getServicePointsByScope      : <==      Total: 3
