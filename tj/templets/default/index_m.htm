@@ -35,9 +35,10 @@
   </a> <a class="mm-hlogo" href="/m/"> <img src="/moblie/images/logo.png" /> </a> </div>
 <div class="content indexPage">
   <div class="mm-head"></div>
+  <!--头图轮播-->
   <div id="mm-slider">
     <ul class="slider">
-      {dede:arclist  typeid='18' addfields='mobliepic' channelid='4' row='6'}
+      {dede:arclist  typeid='18' addfields='mobliepic' channelid='4' row='6' orderby='weight' orderway="asc"}
       <li> <a target="_blank">
         <div class="slider-img"> <img src="[field:mobliepic/]" /> </div>
         <div class="slider-info">
@@ -58,7 +59,7 @@
         {/dede:type} </div>
       <div class="content">
         <div class="wrapper">
-          <div class="content_list clearfix"> {dede:arclist typeid='1' row='6'}
+          <div class="content_list clearfix"> {dede:arclist typeid='1' row='6' orderby='weight' orderway="asc"}
             <div id="project_item_[field:global.autoindex/]" class="item_block wow" style="animation-delay:.[field:global.autoindex/]s"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
               <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
                 <div class="item_mask"></div>
@@ -87,7 +88,7 @@
         {/dede:type} </div>
       <div class="content">
         <div class="wrapper">
-          <div class="content_list clearfix"> {dede:arclist typeid='21' row='6'}
+          <div class="content_list clearfix"> {dede:arclist typeid='21' row='6' orderby='weight' orderway="asc"}
             <div id="project_item_[field:global.autoindex/]" class="item_block wow" style="animation-delay:.[field:global.autoindex/]s"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
               <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
                 <div class="item_mask"></div>
@@ -116,7 +117,7 @@
         {/dede:type} </div>
       <div class="content">
         <div class="wrapper">
-          <div class="content_list clearfix"> {dede:arclist typeid='4' row='6'}
+          <div class="content_list clearfix"> {dede:arclist typeid='4' row='6' orderby='weight' orderway="asc"}
             <div id="item_block_[field:global.autoindex/]" class="item_block wow"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
               <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
                 <div class="item_mask"></div>
@@ -144,7 +145,7 @@
         {/dede:type} </div>
       <div class="content">
         <div class="wrapper">
-          <div class="content_list clearfix"> {dede:arclist  typeid='7'  row='12' addfields='video' channelid='5' row='4'}
+          <div class="content_list clearfix"> {dede:arclist  typeid='7'  row='12' addfields='video' channelid='5' row='4' orderby='weight' orderway="asc"}
             <div id="project_item_[field:global.autoindex/]" class="item_block" style="animation-delay:.[field:global.autoindex/]s"> <a href="[field:video/]" class="item_link clearfix">
               <div class="item_img">
                 <p class="img_box"><img src="[field:picname/]" alt="[field:title/]" /></p>
@@ -176,7 +177,7 @@
         {/dede:type} </div>
       <div class="content">
         <div class="wrapper">
-          <div class="content_list clearfix"> {dede:arclist typeid='11' row='9'}
+          <div class="content_list clearfix"> {dede:arclist typeid='11' row='9' orderby='weight' orderway="asc"}
             <div id="item_block_[field:global.autoindex/]" class="item_block wow"> <a href="view.php?aid=[field:id/]" class="item_link clearfix">
               <div class="item_img"> <img src="[field:picname/]" alt="[field:title/]" />
                 <div class="item_mask"></div>
