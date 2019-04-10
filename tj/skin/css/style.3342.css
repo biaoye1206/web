@@ -4216,7 +4216,7 @@ img {
 	font-weight: 100
 }
 .agent-pc .npagePage #mcontact #contactinfo p {
-	width: 290px;
+	width: 100%;
 	padding-right: 60px;
 	margin-top: 4px;
 	height: auto;
@@ -4224,7 +4224,7 @@ img {
 	font-size: 12px;
 	line-height: inherit;
 	display: inline-block;
-	width: calc(30.4% - 28px)
+	width: calc(100% - 28px)
 }
 .agent-pc .npagePage #mcontact #contactlist #contactform {
 	left: 50%;
