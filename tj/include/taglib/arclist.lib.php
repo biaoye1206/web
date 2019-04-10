@@ -72,7 +72,7 @@ function lib_arclist( &$ctag, &$refObj )
         $tagid = $ctag->GetAtt('tagid');
     }
     // arclist是否需要weight排序,默认为"N",如果需要排序则设置为"Y"
-    $isweight = $ctag->GetAtt('isweight');
+    $weight = $ctag->GetAtt('weight');
 
     if($tagname=='imglist' || $tagname=='imginfolist') {
         $listtype = 'image';
