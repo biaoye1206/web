@@ -49,7 +49,7 @@
           <div class="container_category wow movedx" data-movedx-mid="2" data-movedx-distance="15"> <a href="{dede:type typeid='1'}[field:typelink/]{/dede:type}" class='{dede:field name=typeid runphp="yes"}(@me=="1")? @me="active":@me="";{/dede:field}'><span>全部</span></a> {dede:channel  type ='son' currentstyle="<a href='~typelink~' class='active'><span>~typename~</span></a>"} <a href="[field:typelink/]"><span>[field:typename/]</span></a> {/dede:channel} </div>
           <div class="container_content">
             <div class="content_wrapper">
-              <div class="content_list clearfix"> {dede:list pagesize ='16'}
+              <div class="content_list clearfix"> {dede:list pagesize ='16' orderby='weight' orderway="asc"}
                 <div id="project_item_[field:global.autoindex/]" class="item_block wow" style="animation-delay:.[field:global.autoindex/]s"> <a href="[field:arcurl/]" class="item_link clearfix"  target="_blank" >
                   <div class="item_img"><img src="[field:picname/]" alt="[field:title/]"/>
                     <div class="item_mask"></div>
